@@ -288,11 +288,17 @@ def esta_a_tupla_ordeada(tupla):
     ordeada = True
     valor1 = tupla[0]
     for valor in tupla:
-        if valor1> valorr:
+        if valor1> valor:
          ordeada = False
         valor1 = valor
     return ordeada
 print(esta_a_tupla_ordeada((3,5,6,7,7,8)))
 
 
+lista.append("novo valor añadido") #añadir valores a la tupla ( un elemento)
+lista.extend(("outro","outro",("outro",))) # añadir valores a la tupla ( varios elementos)
+lista.insert(4,"inserto") #añado un valor dando la posición y luego el contenido
+print(lista)
+print (lista.count(['Pepe','Asia','Oceania']))
+print(len(lista))
 
