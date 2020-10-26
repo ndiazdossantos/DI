@@ -300,5 +300,21 @@ lista.extend(("outro","outro",("outro",))) # añadir valores a la tupla ( varios
 lista.insert(4,"inserto") #añado un valor dando la posición y luego el contenido
 print(lista)
 print (lista.count(['Pepe','Asia','Oceania']))
+print(lista.count('outro'))
 print(len(lista))
+#print(lista.index('outro',10,12)) # podemos decirlle dende que opinión queremos que conte
+lista.pop(4)  #Me dice el indice del elemento que yo quiero eliminar
+lista.remove(4)#serve para eliminar el elemento ( la primera coincidencia)
+lista.reverse()
+lista2=[3,2,5,7,5,9,3]
+lista2.sort()
+print(lista2)
+lista3 = [("Raul",15),("Belen",17),("Ana",16)]
+#lista3.sort()
+#print(lista3)
 
+def comparacion (elemento):
+    return elemento[1]
+
+lista3.sort(key = comparacion, reverse=True)
+print(lista)
