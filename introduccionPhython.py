@@ -318,3 +318,33 @@ def comparacion (elemento):
 
 lista3.sort(key = comparacion, reverse=True)
 print(lista)
+
+
+
+
+diccionario = {
+    "Azul": "#2E86C1",
+    "Vermello": "#E74C3C",
+    "Verde": "#2ECC71"
+}
+
+print(diccionario["Verde"])
+
+print(diccionario.get("Verdesssss", "O obxecto non existe"))
+print("Verde" in diccionario)
+print(diccionario.items())
+for entrada in diccionario.items():
+    print("Clave: " + entrada[0] + " Valor: " + entrada[1])
+
+print(diccionario.keys())
+print(diccionario.values())
+print("Borrando a entrada con clave: verde\n Que devolta o valor: " + diccionario.pop("Verde", "#0000000"))
+
+                       #Ampliación de cadeas
+cadea = "Unha cadea para traballar como exemplo"
+print(cadea.count("cadea"))
+print(cadea.find("cadea",6,30))
+print(cadea.join(("Ola","que","tal")))
+print(cadea.partition(' '))
+print(cadea.split(' ',5))
+print(cadea.replace('cadea', "******",1))
