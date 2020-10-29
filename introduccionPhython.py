@@ -348,3 +348,5 @@ print(cadea.join(("Ola","que","tal")))
 print(cadea.partition(' '))
 print(cadea.split(' ',5))
 print(cadea.replace('cadea', "******",1))
+
+
