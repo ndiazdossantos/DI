@@ -1,16 +1,20 @@
-# This is a sample Python script.
+import modulosPaquetes
+from excepciones import Punto,Cilindro
+modulosPaquetes.funcion()
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#definimos una clase
+clase = modulosPaquetes.UnhaClase()
 
+#punto = excepciones.Punto(2,-3)
+punto = Punto(2, -3)
+cil = Cilindro(3, 4, 5)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+"""o tambien puedo traerme la funcion con
 
+from modulosPaquetes import funcion
+funcion()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+"""
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    c = Cilindro(3, 4, 5)
